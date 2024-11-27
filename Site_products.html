@@ -1,0 +1,186 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://kit.fontawesome.com/c8c5d77213.js" crossorigin="anonymous"></script>
+	<link rel="icon" href="favicon.PNG" type="image/x-icon">
+	<link href="style.css" rel="stylesheet">
+	<script src="script.js" defer></script>
+</head>
+<body class="bg-gray-800">
+    
+    <div class="flex h-screen bg-slate-300">
+
+
+		<input type="checkbox" id="menu-toggle" class="hidden peer">
+
+		<div class="hidden peer-checked:flex md:flex flex-col w-64 bg-gray-800 transition-all duration-300 ease-in-out">
+			<div class="flex items-center justify-between h-16 bg-gray-900 px-4">
+				<span class="text-white font-bold uppercase">Категории</span>
+				<label for="menu-toggle" class="text-white cursor-pointer">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:hidden" fill="none" viewBox="0 0 24 24"
+						 stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							  d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</label>	
+			</div>
+			
+			<div class="flex flex-col flex-1 overflow-y-auto">
+				<nav class="flex-1 px-2 py-4 bg-gray-800">
+					<a href="Site_cloth.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group ">
+						<i class="fa-sharp-duotone fa-solid fa-shirt fa-sm" style="--fa-primary-color: #74C0FC; --fa-secondary-color: #74C0FC; margin-right: 10px;">
+						</i>
+						Одежда
+					</a>
+
+	
+					<a href="Site_products.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group">
+						<i class="fa-solid fa-lemon" style="margin-right: 10px;"></i>
+						Продукты
+					</a>
+
+					<a href="Site_beauty.html" class="flex items-center px-4 py-2 text-gray-100 hover:bg-gray-700 group">
+						<i class="fa-regular fa-heart" style="margin-right: 10px;"></i>
+						Красота
+					</a>
+									
+					<div class="mb-2 relative group">					
+					</div>
+
+				</nav>
+			</div>
+		</div>
+
+			<div class="flex flex-col flex-1 overflow-y-auto">
+			<div class="flex items-center justify-between h-16 bg-gray-100 border-b border-gray-200">
+				<div class="flex items-center px-4">
+					<label for="menu-toggle"
+						   class="md:hidden mr-4 bg-gray-800 text-white p-2 rounded focus:outline-none cursor-pointer">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none"
+							 viewBox="0 0 24 24" stroke="white">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								  d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+					</label>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+					</svg>
+					<input class="mx-4 w-full border rounded-md px-4 py-2" type="text" placeholder="Поиск товаров">
+
+
+			</div>
+				
+			</div>
+			<div class="p-4">
+
+				<h1 class="text-center font-bold text-indigo-950 text-5xl">Продукты</h1>
+				<div class="bg-slate-300">
+					<div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+						<h2 class="sr-only">Товары</h2>
+
+						<div class="products-container grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+							
+							<a href="#" class="product" data-name="p-4">
+								<img src="Пельмени.PNG" alt="Пельмени" class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]">
+								<h3 class="mt-4 text-sm text-indigo-950">Пельмени</h3>
+								<p class="mt-1 text-lg font-medium text-indigo-950">540,00&#x20bd</p>
+							</a>
+
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+		<div class="products-preview">
+		<div class="preview" data-target="p-1">
+			<i class="fas fa-times"></i>
+			<img src="Толстовка.PNG" alt="Толстовка" class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]">
+			<h3 class="mt-4 text-sm text-indigo-950">Толстовка</h3>
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star-half-alt"></i>
+				<span>( 250 )</span>
+			</div>
+			<p>Описание товара: прекрасная толстовка </p>
+			<div class="price">3 000,00 &#x20bd</div>
+			<div class="buttons">
+				<a href="#" class="buy">Купить сейчас</a>
+				<a href="#" class="cart">В корзину</a>
+			</div>
+		</div>
+
+		<div class="preview" data-target="p-2">
+			<i class="fas fa-times"></i>
+			<img src="Коллаген.PNG" alt="Коллаген" class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]">
+			<h3 class="mt-4 text-sm text-indigo-950">Коллаген</h3>
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star-half-alt"></i>
+				<span>( 250 )</span>
+			</div>
+			<p>Шикарный коллаген </p>
+			<div class="price">4 000,00 &#x20bd</div>
+			<div class="buttons">
+				<a href="#" class="buy">Купить сейчас</a>
+				<a href="#" class="cart">В корзину</a>
+			</div>
+		</div>
+
+		<div class="preview" data-target="p-3">
+			<i class="fas fa-times"></i>
+			<img src="Пилинг.PNG" alt="Пилинг" class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]">
+			<h3 class="mt-4 text-sm text-indigo-950">Пилинг</h3>
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star-half-alt"></i>
+				<span>( 250 )</span>
+			</div>
+			<p>Очищающий пилинг </p>
+			<div class="price">1 800,00 &#x20bd</div>
+			<div class="buttons">
+				<a href="#" class="buy">Купить сейчас</a>
+				<a href="#" class="cart">В корзину</a>
+			</div>
+		</div>
+
+		<div class="preview" data-target="p-4">
+			<i class="fas fa-times"></i>
+			<img src="Пельмени.PNG" alt="Пельмени" class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]">
+			<h3 class="mt-4 text-sm text-indigo-950">Пельмени</h3>
+			<div class="stars">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star-half-alt"></i>
+				<span>( 250 )</span>
+			</div>
+			<p>Очень вкусные пельмешки </p>
+			<div class="price">540,00 &#x20bd</div>
+			<div class="buttons">
+				<a href="#" class="buy">Купить сейчас</a>
+				<a href="#" class="cart">В корзину</a>
+			</div>
+		</div>
+
+
+		
+	</div>
+
+
+</body>
+</html>
